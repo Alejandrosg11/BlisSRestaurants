@@ -1,0 +1,29 @@
+<h2>{{name}}</h2>
+<p>{{cuisine}}</p>
+<ul>
+   {{#each tags}}
+   <li>{{this}}</li>
+   {{/each}}
+</ul>
+
+
+<br><br><br><br>
+        <div class="columns has-text-centered specs">
+            <div class="column"></div>
+            <div class="column">
+                <span class="icon">
+                    <i class="fas fa-utensils" style="font-size:80px;"></i><br>
+                </span><br><br><h1 class="title">Borough</h1><br>
+                {{#each tags}} <li> <a href="{{this.borough}}"> {{this.name}} </a> </li>{{/each}}
+            </div>
+            <div class="column">
+                <span class="icon">
+                    <i class="fas fa-star" style="font-size:80px;"></i><br>
+                </span><br><br><h1 class="title">Capacity</h1><br>
+                    {{#each restaurants}}<li>{{this}}</li>{{/each}}
+            </div>
+            <div class="column"></div>
+    </div>   
+                <button class="button is-dark"><a href="/">volver</a></button>
+
+

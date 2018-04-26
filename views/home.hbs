@@ -1,0 +1,26 @@
+<section>   
+<br><br><br><br>
+        <div class="columns has-text-centered specs">
+            <div class="column"></div>
+            <div class="column">
+                <span class="icon">
+                    <i class="fas fa-utensils" style="font-size:80px;"></i><br>
+                </span><br><br><h1 class="title">Restaurant Name</h1><br>
+                {{#each restaurants}} <li> <a href="{{this.id}}"> {{this.name}} </a> </li>{{/each}}
+            </div>
+            <div class="column">
+                <span class="icon">
+                    <i class="fas fa-star" style="font-size:80px;"></i><br>
+                </span><br><br><h1 class="title">Calification</h1><br>
+                    {{#each restaurants}}<li>{{this.stars}}</li>{{/each}}
+            </div>
+            <div class="column">
+                <span class="icon">
+                    <i class="fas fa-lemon" style="font-size:80px;"></i><br>
+                </span><br><br><h1 class="title">Cuisine</h1><br>
+                    {{#each restaurants}}<li>{{this.cuisine}}</li>{{/each}}
+            </div>
+            <div class="column"></div>
+    </div>   
+
+</section> 
